@@ -17,3 +17,19 @@ h1 {
 a {
   color: inherit;
 }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  border-top: 2px solid #fff;
+  max-width: 500px;
+  margin: 80 auto 0;
+  padding: 10px 0 0;
+}
+nav li {
+  display: inline;
+}
