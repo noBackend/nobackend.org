@@ -1,0 +1,19 @@
+html {
+  background: #000;
+  font-family: Consolas, monaco, monospace;
+  color: #FFF;
+  text-align: center;
+  padding: 5em 1em 0;
+  line-height: 2em;
+}
+
+
+h1 {
+  padding: 140px 0 0;
+  background: url(noBackend.png) 50% 0 no-repeat;
+  background-size: 200px 200px;
+}
+
+a {
+  color: inherit;
+}
