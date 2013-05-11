@@ -2,36 +2,203 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <title>noBackend – build data driven apps without thinking backend.</title>
-    <meta name="description" content="noBackend is a new approach to build data driven apps without thinking backend." />
-
-    <link rel="stylesheet" href="/assets/style.css">
+    <title>noBackend – data driven apps without thinking backend.</title>
+    <meta name="description" content="noBackend is an approach to build data driven apps without thinking backend." />
+    
+    <link rel="stylesheet" href="/assets/vendor/prism.css">
+    <link rel="stylesheet" href="/assets/main.css">
   </head>
-  <body>
-    <h1>Look ma, no Backend!</h1>
-    <p>
-      noBackend is a new approach<br>
-      to build data driven apps<br>
-      without thinking backend.
-    </p>
-
-    <p>
-      We aim to kick off a discussion<br>
-      about how frontend developers<br>
-      wish to control backend tasks<br>
-      in a way that feels native.
-    </p>
+  <body class="home">
+    <header>
+      <h1>
+        noBackend
+      </h1>
+      <p>
+        Welcome, to the wonderfull world of noBackend,<br>
+        where frontend developers build data driven apps,<br>
+        without <em>thinking</em> about the backend.
+      </p>
+    </header>
 
     <nav>
       <ul>
-        <li><a href="/dreamcode">dreamcode</a></li>
-        <li><a href="/examples">examples</a></li>
-        <li><a href="/solutions">solutions</a></li>
-        <li><a href="/presskit">presskit</a></li>
-        <li><a href="https://twitter.com/nobackend">@noBackend</a></li>
+        <li class="active">Welcome</li>
+        <li><a href="dreamcode.html">Dreamcode</a></li>
+        <li><a href="examples.html">Examples</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="help_us.html">Help us &lt;3 </a></li>
       </ul>
     </nav>
 
-    <a href="https://github.com/noBackend/nobackend.github.com/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    <div class="main">
+      <section class="welcome">
+        <h2>It's 2013. Why can't we just …</h2>
+
+        <div class="dreamcode">
+<pre class="active"><code class="language-javascript">// create new account
+signUp("joe@exam.pl", "secret")</code></pre>
+
+<pre><code class="language-javascript">// store object
+store.add({
+  type: "task",
+  title: "remember the milk"
+})</code></pre>
+
+<pre><code class="language-javascript">// convert page to PDF
+convert( document.body )
+.to( 'report.pdf' )
+.download()</code></pre>
+
+<pre><code class="language-javascript">// reset my password
+resetPassword("joe@exam.pl")</code></pre>
+
+<pre><code class="language-javascript">// send an email
+sendEmail({
+  to: "jane@exam.pl",
+  subject: "Report",
+  text: "Hey Jane,\n\n…",
+  html: "&lt;h1&gt;Hey Jane&lt;/h1&gt;&lt;p&gt;…&lt;/p&gt;",
+  attachments: [ 
+    convert( document.body )
+    .to( 'report.pdf' )
+  ]
+})</code></pre>
+
+<pre><code class="language-javascript">// upgrade an account
+purchase(
+  account.upgradeTo("pro")
+).using("paypal")</code></pre>
+
+<pre><code class="language-javascript">// purchase a product
+purchase('productId')
+.using({
+  cc: "4556934156210213",
+  valid: "2016-10",
+  csc: "123"
+})</code></pre>
+
+          <p class="next"><a href="#next">next</a></p>
+        </div>
+
+        <p>
+          <strong>noBackend</strong> aims to kick off a discussion on how 
+          frontend developers wish to control backend tasks
+          in a way that feels native.
+          Our goal is to provide an extensive set of what we
+          call <a href="dreamcode.html">Dreamcode</a> to help
+          <a href="solutions.html">providers of noBackend solutions</a> 
+          get a better understanding of what their target group
+          is looking for. 
+        </p>
+
+        <p>
+          A beautiful API is hard to craft, but is the root
+          of the success of libraries like jQuery that changed
+          the way we build apps.
+        </p>
+      </section>
+
+      <section class="teaser">
+        <div class="dreamcode" id="dreamcode">
+          <h2>Dreamcode</h2>
+          <p>
+            Forget all the constraints of today's browsers.
+            Then write down the code of your dreams for
+            all the tasks you need to build your app.
+            This is dreamcode. Here's another example:
+          </p>
+
+<pre><code class="language-javascript">// share a report
+var share = store.find("report", "id123").share();
+share.grantWriteAccess(["jane@exam.pl", "joe@exam.pl"]);
+share.grantReadAccess("boss@exam.pl");
+share.ready( showSecretUrl );
+share.fail( handleError );
+</code></pre>
+
+          <p>
+            Dreamcode is an excelent tool to drive the design
+            process of building an app from the frontend's 
+            perspective. Instead of getting a RESTful API from
+            the backendend that you have to adapt to, all the
+            backend should be hidden behind well thought trough,
+            reusable JavaScript APIs.
+          </p>
+
+          <p>
+            Dream code, <a href="dreamcode.html">discuss with us</a>.
+          </p>
+        </div><!-- /dreamcode -->
+
+        <div class="examples" id="examples">
+          <h2>Example App</h2>
+
+          <p>
+            <a href="http://nobackend.github.io/example-invoice/">
+              <img alt="" src="assets/nobackend-invoicing-app.png" class="example">
+            </a>
+          </p>
+
+          <p>
+            Inspired by the wonderfull <a href="http://todomvc.com/">TodoMVC</a>,
+            we created an example invoicing app that is implemented
+            using today's noBackend solutions.
+          </p>
+
+          <p>
+            It's based on Chris Coyer's <a href="http://css-tricks.com/editable-invoice-v2/">Editable Invoice</a>,
+            that he created back in 2009 as a showcase for an HTML-only app.
+            We've tweaked the design a bit, and also added features that
+            typically require a backend: User Accounts, Exports, Emails.
+          </p>
+
+          <p>
+            See a list of <a href="examples.html">noBackend example apps</a>.
+          </p>
+        </div><!-- /examples -->
+
+        <div class="solutions" id="solutions">
+          <h2>Solutions</h2>
+
+          <p>
+            There are several providers of noBackend solutions today.
+            Some are open source, some are hosted services, we maintain
+            comparision table over at <a href="solutions.html">noBackend solutions</a>.
+          </p>
+        </div><!-- /solutions -->
+
+        <div class="helpUs" id="help_us">
+          <h2>Help us!</h2>
+
+          <p>
+            This is early days of noBackend. Help us, by sending over
+            feedback, spreading the word, <a href="https://github.com/noBackend/nobackend.org/">fixing some typos</a>,
+            make a shiny design for the website, <a href="https://github.com/nobackend/example-invoice/">add an implementation of another
+            noBackend solution for our example app</a>, add entirely new
+            example apps, add new noBackend solutions. What ever comes
+            to your mind, this is a community endeavor, and you are more
+            invited to help making it prosper.
+          </p>
+
+          <p>
+            <a href="help_us.html">Help us!</a> <strong>Thanks &lt;3</strong>
+          </p>
+        </div><!-- /help_us -->
+      </section><!-- /.teaser -->
+    </div><!-- /.main -->
+
+    <footer>
+      <p>
+        © noBackend.org
+        | Licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">cc-by-sa</a>
+        | <a href="https://github.com/noBackend/presskit">presskit</a>
+        | <a href="https://twitter.com/noBackend">@noBackend</a>
+        | <a href="https://github.com/noBackend/nobackend.org/">Fork us!</a>
+      </p>
+    </footer>
+
+    <script src="/assets/vendor/jquery-2.0.0.min.js"></script>
+    <script src="/assets/vendor/prism.js"></script>
+    <script src="/assets/main.js"></script>
   </body>
 </html>
