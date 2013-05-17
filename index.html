@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>noBackend – data driven apps without thinking backend.</title>
     <meta name="description" content="noBackend is an approach to build data driven apps without thinking backend." />
-    
+
     <link rel="stylesheet" href="assets/vendor/prism.css">
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
@@ -61,7 +61,7 @@ sendEmail({
   subject: "Report",
   text: "Hey Jane,\n\n…",
   html: "&lt;h1&gt;Hey Jane&lt;/h1&gt;&lt;p&gt;…&lt;/p&gt;",
-  attachments: [ 
+  attachments: [
     convert( document.body )
     .to( 'report.pdf' )
   ]
@@ -84,14 +84,14 @@ purchase('productId')
         </div>
 
         <p>
-          <strong>noBackend</strong> aims to kick off a discussion on how 
+          <strong>noBackend</strong> aims to kick off a discussion on how
           frontend developers wish to control backend tasks
           in a way that feels native.
           Our goal is to provide an extensive set of what we
           call <a href="dreamcode.html">Dreamcode</a> to help
-          <a href="solutions.html">providers of noBackend solutions</a> 
+          <a href="solutions.html">providers of noBackend solutions</a>
           get a better understanding of what their target group
-          is looking for. 
+          is looking for.
         </p>
 
         <p>
@@ -121,7 +121,7 @@ share.fail( handleError );
 
           <p>
             Dreamcode is an excellent tool to drive the design
-            process of building an app from the frontend's 
+            process of building an app from the frontend's
             perspective. Instead of getting a RESTful API from
             the backend that you have to adapt to, all the
             backend should be hidden behind well thought through,
@@ -149,7 +149,7 @@ share.fail( handleError );
           </p>
 
           <p>
-            It's based on Chris Coyer's <a href="http://css-tricks.com/editable-invoice-v2/">Editable Invoice</a>,
+            It's based on Chris Coyier's <a href="http://css-tricks.com/editable-invoice-v2/">Editable Invoice</a>,
             that he created back in 2009 as a showcase for an HTML-only app.
             We've tweaked the design a bit, and also added features that
             typically require a backend: User Accounts, Exports, Emails.
