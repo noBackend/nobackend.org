@@ -210,6 +210,10 @@ body.home .main .posts strong + a {
   opacity: .5;
   text-decoration: none;
 }
+body.home .main .posts strong + a:focus,
+body.home .main .posts strong + a:hover {
+  opacity: 1;
+}
 
 
 body.examples img {
