@@ -23,3 +23,6 @@ if( location.host === 'nobackend.org') {
   ga('create', 'UA-40865648-1', 'nobackend.org');
   ga('send', 'pageview');
 }
+
+// disqus
+var disqus_shortname = 'nobackend';

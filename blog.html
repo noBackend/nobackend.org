@@ -18,8 +18,22 @@ tab:        blog
 
       {{ post.excerpt }}
 
-      <p class="more"><a href=".{{ post.url }}">read more</a></p>
+      <p class="more">
+        <a href=".{{ post.url }}">read more</a>
+        | <a href=".{{ post.url }}#disqus_thread" data-disqus-identifier>comments</a>
+      </p>
     </article>
     
   {% endfor %}
 </section>
+
+<!-- disqus: adding comment count -->
+<script type="text/javascript">
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//nobackend.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+<!-- /disqus -->
