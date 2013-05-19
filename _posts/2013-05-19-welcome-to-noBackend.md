@@ -12,7 +12,7 @@ From a user's perspective, the unique parts sum app to the user interface and th
 These are different concerns that require very different skills, often times accomplished by different developers. noBackend promotes a simpler decoupling of these concerns, so both sides can focus on what they are passionate about.
 
 
-## A simple example
+### A simple example
 
 The API, the way the frontend code interacts with backend functionality, is usually provided by the backend. Here's a simple example for an API to sign as an existing user.
 
