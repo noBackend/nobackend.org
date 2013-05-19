@@ -203,14 +203,15 @@ body.home .main .dreamcode .next a {
   padding: .1em 1em 0;
 }
 
+body.home .main .posts {
+  margin: 2em 0 0;
+}
 body.home .main .posts ul,
 body.home .main .posts li {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 body.home .main .posts strong {
-  font-size: 1.2em;
 }
 body.home .main .posts strong + a {
   font-size: .8em;
