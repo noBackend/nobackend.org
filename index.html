@@ -13,8 +13,8 @@ signUp("joe@exam.pl", "secret")</code></pre>
 
 <pre><code class="language-javascript">// store an object
 store.add({
-type: "task",
-title: "remember the milk"
+  type: "task",
+  title: "remember the milk"
 })</code></pre>
 
 <pre><code class="language-javascript">// convert a page to PDF
@@ -27,28 +27,28 @@ resetPassword("joe@exam.pl")</code></pre>
 
 <pre><code class="language-javascript">// send an email
 sendEmail({
-to: "jane@exam.pl",
-subject: "Report",
-text: "Hey Jane,\n\n…",
-html: "&lt;h1&gt;Hey Jane&lt;/h1&gt;&lt;p&gt;…&lt;/p&gt;",
-attachments: [
-convert( document.body )
-.to( 'report.pdf' )
-]
+  to: "jane@exam.pl",
+  subject: "Report",
+  text: "Hey Jane,\n\n…",
+  html: "&lt;h1&gt;Hey Jane&lt;/h1&gt;&lt;p&gt;…&lt;/p&gt;",
+  attachments: [
+    convert( document.body )
+    .to( 'report.pdf' )
+  ]
 })</code></pre>
 
 <pre><code class="language-javascript">// upgrade an account
 purchase(
-account.upgradeTo("pro")
+  account.upgradeTo("pro")
 ).using("paypal")</code></pre>
 
 <pre><code class="language-javascript">// purchase a product
 purchase('productId')
 .using({
-cc: "4556934156210213",
-valid: "2016-10",
-csc: "123"
-})</code>
+  cc: "4556934156210213",
+  valid: "2016-10",
+  csc: "123"
+})</code></pre>
 
 <pre><code class="language-javascript">// get a coffee
 device('192.168.2.2')
