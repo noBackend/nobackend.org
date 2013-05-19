@@ -29,6 +29,13 @@ p, li {
   max-width: 50em;
 }
 
+hr {
+  border-color: #CDBEB1;
+  border-style: solid none;
+  border-width: 1px 0 0;
+  margin: 18px 0;
+}
+
 pre[class] {
   margin: 0 0 1em;
   padding: 0 1em;
