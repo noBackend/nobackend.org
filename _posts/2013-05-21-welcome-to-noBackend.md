@@ -1,8 +1,8 @@
 ---
 layout:   post
-title:    "Welcome to noBackend!"
-date:     2013-05-21 12:00:00
+title:    Welcome to noBackend!
 author:   Gregor Martynus
+twitter:  gr2m
 bio:      Gregor enjoys dreaming code at [nobackend.org](http://nobackend.org)
           and making it real at [Hoodie](http://hood.ie).<br>
           You can follow him on [twitter](https://twitter.com/gr2m)

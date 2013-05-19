@@ -127,20 +127,31 @@ body > .main {
   padding: 2% 5%;
   background: #F5F2F0;
 }
-.welcome .dreamcode {
+
+body > footer {
+  padding: 1em 2em;
+  border-top: 2px solid #CDBEB1;
+}
+body > footer p {
+  margin: 0;
+}
+
+
+/* page customizations */
+body.home .main .dreamcode {
   background: #FFF;
   margin: 0 -5.56%;
   padding: 1em 5.56%;
 }
-.welcome .dreamcode pre[class] {
+body.home .main .dreamcode pre[class] {
   display: none;
   padding: 0;
   margin: 0;
 }
-.welcome .dreamcode pre[class].active {
+body.home .main .dreamcode pre[class].active {
   display: block;
 }
-.dreamcode .next a {
+body.home .main .dreamcode .next a {
   display: inline-block;
   /*color: #73304C;*/
   background: #CDBDB1;
@@ -149,17 +160,25 @@ body > .main {
   padding: .1em 1em 0;
 }
 
-.examples img {
-  max-width: 50%;
-  float: right;
+body.home .main .posts ul,
+body.home .main .posts li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body.home .main .posts strong {
+  font-size: 1.2em;
+}
+body.home .main .posts strong + a {
+  font-size: .8em;
+  opacity: .5;
+  text-decoration: none;
 }
 
-body > footer {
-  padding: 1em 2em;
-  border-top: 2px solid #CDBEB1;
-}
-body > footer p {
-  margin: 0;
+
+body.examples img {
+  max-width: 50%;
+  float: right;
 }
 
 
@@ -233,6 +252,8 @@ body.blog .main > article > footer p {
 body.blog .comments {
   min-height: 400px;
 }
+
+
 
 @media only screen and (max-width: 640px) {
   body > header br {
