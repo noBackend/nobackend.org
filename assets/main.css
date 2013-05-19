@@ -186,7 +186,7 @@ body.home .main .dreamcode {
   margin: 0 -5.56%;
   padding: 1em 5.56%;
 }
-body.home .main .dreamcode pre[class] {
+body.home .main .dreamcode pre {
   display: none;
   padding: 0;
   margin: 0;
