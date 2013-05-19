@@ -179,6 +179,16 @@ body > footer p {
   margin-right: .3em;
 }
 
+.box {
+  background: #FFF;
+  border: 1px solid #CDBEB1;
+  border-width: 1px 0;
+  padding: 1em;
+}
+.box h3,
+.box p {
+  margin: 0;
+}
 
 /* page customizations */
 body.home .main .dreamcode {

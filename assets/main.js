@@ -10,6 +10,16 @@ $('document').ready( function() {
     $current.removeClass('active')
     $next.addClass('active')
   })
+
+  $('.addNewPost').on('click', function(event) {
+    event.preventDefault();
+    var name = prompt("What would you like to call your blog post?")
+    if (name) {
+      name = name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
+      url = event.target.href + "?filename=" + name + ".md"
+      location.href = url
+    }
+  });
 });
 
 
