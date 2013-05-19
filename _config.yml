@@ -1,2 +1,5 @@
 name: noBackend
+
+# blog posts
 excerpt_separator: "\n\n\n"
+permalink: /:year/:month/:title.html
