@@ -29,6 +29,19 @@ p, li {
   max-width: 50em;
 }
 
+pre[class] {
+  margin: 0 0 1em;
+  padding: 0 1em;
+  background: #FFF;
+  position: relative;
+  line-height: 1.3em;
+  padding: 1em 0;
+  font-family: 'Ubuntu Mono', Consolas, Monaco, 'Andale Mono', monospace;
+  display: block;
+  margin: 0 -5.56%;
+  padding: 1em 5.56%;
+}
+
 body > header {
   position: relative;
   padding: 2% 5%;
@@ -122,21 +135,10 @@ body > .main {
 .welcome .dreamcode pre[class] {
   display: none;
   padding: 0;
+  margin: 0;
 }
 .welcome .dreamcode pre[class].active {
   display: block;
-}
-.dreamcode pre[class] {
-  margin: 0 0 1em;
-  padding: 0 1em;
-  background: #FFF;
-  position: relative;
-}
-.dreamcode code[class] {
-  line-height: 1.3em;
-  display: inline-block;
-  padding: 1em 0;
-  font-family: 'Ubuntu Mono', Consolas, Monaco, 'Andale Mono', monospace;
 }
 .dreamcode .next a {
   display: inline-block;
@@ -150,11 +152,6 @@ body > .main {
 .examples img {
   max-width: 50%;
   float: right;
-}
-
-.teaser .dreamcode pre {
-  margin: 0 -5.56%;
-  padding: 1em 5.56%;
 }
 
 body > footer {
@@ -222,10 +219,16 @@ body.blog .main > article > footer {
   border-width: 1px 0;
   padding: .5em;
   background: #FFF;
-  font-size: .8em;
+
+  overflow: hidden;
+}
+body.blog .main > article > footer img {
+  float: left;
+  margin-right: .5em;
 }
 body.blog .main > article > footer p {
   margin: 0;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 640px) {

@@ -3,7 +3,11 @@ layout:   post
 title:    "Welcome to noBackend!"
 date:     2013-05-19 13:31:13
 author:   Gregor Martynus
-author_twitter: gr2m
+bio:      Gregor enjoys dreaming code at [nobackend.org](http://nobackend.org)
+          and making it real at [Hoodie](http://hood.ie).<br>
+          You can follow him on [twitter](https://twitter.com/gr2m)
+          or [github](https://github.com/gr2m).
+gravatar: http://www.gravatar.com/avatar/24fc194843a71f10949be18d5a692682
 ---
 
 Every app is made out of two kind of things. The ones that are unique to your app, and the ones that are not. 
@@ -17,16 +21,16 @@ These are different concerns that require very different skills, often times acc
 
 The API, the way the frontend code interacts with backend functionality, is usually provided by the backend. Here's a simple example for an API to sign as an existing user.
 
-<pre><code class="language-xhr">POST /session
+<pre><code class="language-bash">POST /session
 { "email":"joe@example.com", "password": "secret" }</code></pre>
 
 It's the responsibility of the frontend developer to send the request as described and react on its response, including edge cases like a connections being lost or an unforeseen server error.
 
 Instead, noBackend suggest to let the frontend developer define the API, by describing backend functionality with frontend code. For example:
 
-<pre><code class="language-javascript">signIn( username, password )
-.then( successCallback )
-.fail( errorCallback )
+<pre><code class="language-javascript">signIn( 'joe@example.com', 'secret' )
+.then( showDashboard )
+.fail( showError )
 </code></pre>
 
 We call it "Dreamcode", as it is often times written before the actual code is functional.
@@ -60,8 +64,7 @@ The frontend developer can lead the entire design process of building the app. D
 
 The benefits become more clear when looking at a more complex example. Let's say you want to send a multipart email with the current page attached as PDF.
 
-```js
-sendEmail({
+<pre><code class="language-javascript">sendEmail({
   subject: "Hello, World!",
   text: "This mail has been sent from the frontend",
   html: "<p>This mail has been sent from the frontend</p>",
@@ -69,8 +72,7 @@ sendEmail({
   attachments: [ 
     convert( document.body ).to("report.pdf"),
   ]
-})
-```
+})</code></pre>
 
 To make this code work, and to make it insusceptible to SPAM, might be quite challenging. But one could start to make a quick & dirty implementation and then gradually improve the implementation without changing the API. The important point is that the benefit for a frontend developer who can grant such functionality as given and focus on the user experience outweighs the complexity of the implementation, by far.
 
