@@ -10,11 +10,11 @@ bio:      Gregor enjoys dreaming code at [nobackend.org](http://nobackend.org)
 gravatar: http://www.gravatar.com/avatar/24fc194843a71f10949be18d5a692682
 ---
 
-Every app is made out of two kind of things. The ones that are unique to your app, and the ones that are not. 
+Every app is made out of two kind of things. The ones that are unique to your app, and the ones that are the same for every app, user signup, password forget, that kind of thing.
 
 From a user's perspective, the unique parts sum app to the user interface and the way it behaves. The functionality behind the visual facade is taken as granted and expected to just work™.
 
-These are different concerns that require very different skills, often times accomplished by different developers. noBackend promotes a simpler decoupling of these concerns, so both sides can focus on what they are passionate about.
+The frontend and the backend have different concerns that require very different skills, often times accomplished by different developers. noBackend promotes a simpler decoupling of these concerns, so both sides can focus on what they are passionate about.
 
 
 ### A simple example
@@ -33,7 +33,7 @@ Instead, noBackend suggest to let the frontend developer define the API, by desc
 .fail( showError )
 </code></pre>
 
-We call it "Dreamcode", as it is often times written before the actual code is functional.
+We call this dreamcode, as it is often times written before the actual code is functional.
 
 At first sight, it doesn't make much of a difference, all it would do is sending the AJAX request and call the respective callback. But the API is more powerful in several ways.
 
@@ -46,7 +46,7 @@ She or he does not care about
 - if it is an HTTP POST or PUT request
 - if it is send via websockets
 - if cookies are used for authentication, or session IDs send as query parameter or as a custom header
-- if the app resends a request if the first times out
+- If the app sends another request when the first one times out.
 
 The implementation of the `signIn` method could be adjusted to reflect a change in the implementation, without changing the API that the frontend developer is using. 
 
@@ -74,7 +74,9 @@ The benefits become more clear when looking at a more complex example. Let's say
   ]
 })</code></pre>
 
-To make this code work, and to make it insusceptible to SPAM, might be quite challenging. But one could start to make a quick & dirty implementation and then gradually improve the implementation without changing the API. The important point is that the benefit for a frontend developer who can grant such functionality as given and focus on the user experience outweighs the complexity of the implementation, by far.
+To make this code work, and to make it insusceptible to spam, might be quite challenging. But one could start to make a quick & dirty implementation and then gradually improve the implementation without changing the API.
+
+**The important point** is that the benefit for a frontend developer who can take such functionality as given and focus on the user experience outweighs the complexity of the implementation, by far.
 
 ### What do you think about noBackend?
 
