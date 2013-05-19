@@ -7,15 +7,15 @@
 
     <title>{{ page.title }}</title>
     <meta name="description" content="noBackend is an approach to build data driven apps without thinking backend." />
-    <link rel="stylesheet" href="{{ relative }}assets/vendor/prism.css">
+    <link rel="stylesheet" href="{{ page.root_path }}assets/vendor/prism.css">
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ relative }}assets/main.css">
+    <link rel="stylesheet" href="{{ page.root_path }}assets/main.css">
   </head>
   <body class="{{ page.tab }}">
     <header>
       <h1>
-        {{ site.name }}
+        {{ site.name }} 
       </h1>
       <p>
         Welcome, to the wonderful world of noBackend,<br>
@@ -49,9 +49,9 @@
       </p>
     </footer>
 
-    <script src="{{ relative }}assets/vendor/jquery-2.0.0.min.js"></script>
-    <script src="{{ relative }}assets/vendor/prism.js"></script>
-    <script src="{{ relative }}assets/main.js"></script>
+    <script src="{{ page.root_path }}assets/vendor/jquery-2.0.0.min.js"></script>
+    <script src="{{ page.root_path }}assets/vendor/prism.js"></script>
+    <script src="{{ page.root_path }}assets/main.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
