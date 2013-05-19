@@ -81,22 +81,33 @@ body > nav ul {
   margin: 0;
   padding: 0;
   position: absolute;
-  bottom: -2px;
+  bottom: -3px;
 }
 body > nav li {
   display: inline-block;
-  padding: .1em 1em 0;
+  padding: 0;
   font-weight: bold;
+  margin: 0;
 }
-body > nav li.active {
+body > nav li a {
+  display: block;
+  color: #73304C;
+  padding: .3em 1em;
+  border: 2px solid transparent;
+  margin: 0;
+}
+body.home > nav li.home a,
+body.dreamcode > nav li.dreamcode a,
+body.examples > nav li.examples a,
+body.solutions > nav li.solutions a,
+body.blog > nav li.blog a {
   background: #F5F2F0;
   padding: .3em 1em;
   border-radius: .5em .5em 0 0;
-  border: 2px solid #CDBEB1;
+  border-color: #CDBEB1;
   border-bottom: 0;
-}
-body > nav li a {
-  color: #73304C;
+  text-decoration: none;
+  color: inherit;
 }
 
 body > .main {
@@ -187,6 +198,30 @@ body.examples h3 small {
   font-weight: normal;
   font-size: .8em;
   opacity: .7;
+}
+
+body.blog .main article {
+  margin: 0 0 1em;
+}
+body.blog .main header > h2 {
+  margin-bottom: 0;
+}
+body.blog .main header > p {
+  margin: 0;
+  opacity: .5;
+}
+body.blog .main h2 a {
+  text-decoration: none;
+}
+body.blog .main h2 a:focus,
+body.blog .main h2 a:hover {
+  text-decoration: underline;
+}
+body.blog .main .posts header ~ p ~ * {
+  display: none;
+}
+body.blog .main .posts header ~ p ~ p.more {
+  display: block;
 }
 
 @media only screen and (max-width: 640px) {

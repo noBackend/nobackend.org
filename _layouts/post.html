@@ -1,0 +1,12 @@
+---
+layout: page
+tab: blog
+---
+<header>
+<h2>{{ page.title }}</h2>
+<p>
+  by {{ page.author }} | {{ page.date | date_to_string }}
+</p>
+</header>
+
+{{ content }}
