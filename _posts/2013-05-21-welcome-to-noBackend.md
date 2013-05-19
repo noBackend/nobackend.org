@@ -68,7 +68,7 @@ The benefits become more clear when looking at a more complex example. Let's say
   subject: "Hello, World!",
   text: "This mail has been sent from the frontend",
   html: "<p>This mail has been sent from the frontend</p>",
-  to: "gregor@martynus.net",
+  to: "joe@example.com",
   attachments: [ 
     convert( document.body ).to("report.pdf"),
   ]
