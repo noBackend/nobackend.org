@@ -11,18 +11,18 @@ tab:      home
 <pre class="active"><code class="language-javascript">// create new account
 signUp("joe@exam.pl", "secret")</code></pre>
 
-<pre><code class="language-javascript">// store object
+<pre><code class="language-javascript">// store an object
 store.add({
 type: "task",
 title: "remember the milk"
 })</code></pre>
 
-<pre><code class="language-javascript">// convert page to PDF
+<pre><code class="language-javascript">// convert a page to PDF
 convert( document.body )
 .to( 'report.pdf' )
 .download()</code></pre>
 
-<pre><code class="language-javascript">// reset my password
+<pre><code class="language-javascript">// reset a password
 resetPassword("joe@exam.pl")</code></pre>
 
 <pre><code class="language-javascript">// send an email
@@ -48,7 +48,12 @@ purchase('productId')
 cc: "4556934156210213",
 valid: "2016-10",
 csc: "123"
-})</code></pre>
+})</code>
+
+<pre><code class="language-javascript">// get a coffee
+device('192.168.2.2')
+.do( 'coffee' )
+.then( wakeMeUp )</code></pre>
 
   <p class="next"><a href="#next">next</a></p>
 </div>
