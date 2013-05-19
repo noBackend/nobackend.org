@@ -3,6 +3,7 @@ layout:   post
 title:    "Welcome to noBackend!"
 date:     2013-05-19 13:31:13
 author:   Gregor Martynus
+author_twitter: gr2m
 ---
 
 Every app is made out of two kind of things. The ones that are unique to your app, and the ones that are not. 

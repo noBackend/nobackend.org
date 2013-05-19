@@ -217,12 +217,16 @@ body.blog .main h2 a:focus,
 body.blog .main h2 a:hover {
   text-decoration: underline;
 }
-/*body.blog .main .posts header ~ p ~ * {
-  display: none;
+body.blog .main > article > footer {
+  border: 1px solid #CDBEB1;
+  border-width: 1px 0;
+  padding: .5em;
+  background: #FFF;
+  font-size: .8em;
 }
-body.blog .main .posts header ~ p ~ p.more {
-  display: block;
-}*/
+body.blog .main > article > footer p {
+  margin: 0;
+}
 
 @media only screen and (max-width: 640px) {
   body > header br {

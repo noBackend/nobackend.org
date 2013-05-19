@@ -3,11 +3,26 @@ layout: page
 tab: blog
 root_path: ../../
 ---
-<header>
-<h2>{{ page.title }}</h2>
-<p>
-  by {{ page.author }} | {{ page.date | date_to_string }}
-</p>
-</header>
 
-{{ content }}
+<article>
+  <header>
+  <h2>{{ page.title }}</h2>
+  <p>
+    by {{ page.author }} | {{ page.date | date_to_string }}
+  </p>
+  </header>
+
+  {{ content }}
+
+  <footer>
+    <p>
+      &quot;{{ page.title }}&quot; has been written by {{ page.author }} whom you can follow on twitter at <a href="https://twitter.com/{{ page.author_twitter }}">@{{ page.author_twitter }}</a>.
+    </p>
+    <p>
+      You can <a href="{{site.github_url}}/blob/gh-pages/{{ page.path }}">fix a typo or suggest a change</a>!!
+    </p>
+    <p>
+
+    </p>
+  </footer>
+</article>
