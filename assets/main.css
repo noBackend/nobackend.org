@@ -126,6 +126,7 @@ body.blog > nav li.blog a {
 body > .main {
   padding: 2% 5%;
   background: #F5F2F0;
+  position: relative;
 }
 
 body > footer {
@@ -134,6 +135,41 @@ body > footer {
 }
 body > footer p {
   margin: 0;
+}
+
+.editButton {
+  position: fixed;
+  bottom: 5%;
+  right: -7.2em;
+}
+.editButton {
+  display: block;
+  background: #222;
+  color: #fff;
+  padding: .5em;
+  padding-right: 3em;
+  line-height: 1em;
+  height: 1em;
+  text-decoration: none;
+  border-radius: .5em;
+  font-size: 1em;
+  box-shadow: 0 1px 1px rgba(0,0,0,.5)
+
+  -webkit-transition:right .1s linear;
+   -moz-transition:right .1s linear;
+     -o-transition:right .1s linear;
+        transition:right .1s linear;
+}
+
+.editButton:focus,
+.editButton:hover {
+  text-decoration: none;
+  color: #fff;
+  right: -1em;
+}
+.editButton:before {
+  content: '✎ ';
+  margin-right: .3em;
 }
 
 
