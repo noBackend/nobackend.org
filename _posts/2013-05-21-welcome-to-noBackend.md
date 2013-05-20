@@ -44,7 +44,7 @@ She or he does not care about
 
 - if the request goes to the app server or a central authentication server
 - if it is an HTTP POST or PUT request
-- if it is send via websockets
+- if it is sent via websockets
 - if cookies are used for authentication, or session IDs send as query parameter or as a custom header
 - If the app sends another request when the first one times out.
 
