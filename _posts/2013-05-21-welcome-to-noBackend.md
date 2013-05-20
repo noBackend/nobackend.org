@@ -19,7 +19,7 @@ The frontend and the backend have different concerns that require very different
 
 ### A simple example
 
-The API, the way the frontend code interacts with backend functionality, is usually provided by the backend. Here's a simple example for an API to sign as an existing user.
+The API, the way the frontend code interacts with backend functionality, is usually provided by the backend. Here's a simple example of an API to sign in as an existing user.
 
 <pre><code class="language-bash">POST /session
 { "email":"joe@example.com", "password": "secret" }</code></pre>
