@@ -24,7 +24,7 @@ The API, the way the frontend code interacts with backend functionality, is usua
 <pre><code class="language-bash">POST /session
 { "email":"joe@example.com", "password": "secret" }</code></pre>
 
-It's the responsibility of the frontend developer to send the request as described and react to its response, including edge cases like a connections being lost or an unforeseen server error.
+It's the responsibility of the frontend developer to send the request as described and react to its response, including edge cases like a connection being lost or an unforeseen server error.
 
 Instead, noBackend suggest to let the frontend developer define the API, by describing backend functionality with frontend code. For example:
 
