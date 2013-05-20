@@ -58,7 +58,7 @@ For the backend developer it means more work in the first place. But the fronten
 
 ### 3. Frontend Driven
 
-The frontend developer can lead the entire design process of building the app. Describing backend functionality in from of Dreamcode let's the developer focus on the user experience, and avoids distraction by discussions on implementation details and delays waiting for a backend API.
+The frontend developer can lead the entire design process of building the app. Describing backend functionality in the form of Dreamcode lets the developer focus on the user experience, and avoids distraction by discussions about implementation details and delays waiting for a backend API.
 
 ### A more complex example
 
