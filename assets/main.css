@@ -4,7 +4,6 @@ html, body {
   position: relative;
 }
 html {
-  background: #FFF;
   font-family: Ubuntu, sans-serif;
   color: #222;
   line-height: 1.7em;
@@ -330,6 +329,4 @@ body.blog .comments {
   html {
     font-size: 1em;
   }
-}
-@media only screen and (min-width: 1001px) {
 }
