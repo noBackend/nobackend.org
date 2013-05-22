@@ -1,96 +1,40 @@
-<html>
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>noBackend – data driven apps without thinking backend.</title>
-    <meta name="description" content="noBackend is an approach to build data driven apps without thinking backend." />
+---
+layout:   page
+title:    noBackend Example Apps
+tab:      examples
+---
 
-    <link rel="stylesheet" href="assets/vendor/prism.css">
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/main.css">
-  </head>
-  <body class="examples">
-    <header>
-      <h1>
-        noBackend
-      </h1>
-      <p>
-        Welcome, to the wonderfull world of noBackend,<br>
-        where frontend developers build data driven apps,<br>
-        without <em>thinking</em> about the backend.
-      </p>
-    </header>
+<h2>noBackend by example</h2>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Welcome</a></li>
-        <li><a href="dreamcode.html">Dreamcode</a></li>
-        <li class="active">Examples</li>
-        <li><a href="solutions.html">Solutions</a></li>
-        <li><a href="help_us.html">Help us &lt;3 </a></li>
-      </ul>
-    </nav>
+<article>
+  <h3>
+    Invoice App
+    <small>(based on <a href="http://css-tricks.com/editable-invoice-v2/">EditableInvoice by Chris Coyer</a>)</small>
+  </h3>
+  <p>
+    <a href="http://nobackend.github.io/example-invoice/" class="screenshot" title="noBackend invoice">
+      <img alt="" src="{{ page.root_path }}assets/example-apps/invoicing-app-screenshot.png">
+    </a>
+  </p>
+  <p>
+    Inspired by the wonderfull <a href="http://todomvc.com/">TodoMVC</a>,
+    we created an example invoicing app that is implemented
+    using today's noBackend solutions.
+  </p>
 
-    <div class="main">
-      <h2>noBackend by example</h2>
+  <p>
+    It's based on Chris Coyier's <a href="http://css-tricks.com/editable-invoice-v2/">Editable Invoice</a>,
+    that he created back in 2009 as a showcase for an HTML-only app.
+    We've tweaked the design a bit, and also added features that
+    typically require a backend: User Accounts, Exports, Emails.
+  </p>
+</article>
 
-      <article>
-        <h3>
-          Invoice App
-          <small>(based on <a href="http://css-tricks.com/editable-invoice-v2/">EditableInvoice by Chris Coyer</a>)</small>
-        </h3>
-        <p>
-          <a href="http://nobackend.github.io/example-invoice/">
-            <img alt="" src="assets/nobackend-invoicing-app.png" class="example">
-          </a>
-        </p>
-        <p>
-          Inspired by the wonderfull <a href="http://todomvc.com/">TodoMVC</a>,
-          we created an example invoicing app that is implemented
-          using today's noBackend solutions.
-        </p>
-
-        <p>
-          It's based on Chris Coyier's <a href="http://css-tricks.com/editable-invoice-v2/">Editable Invoice</a>,
-          that he created back in 2009 as a showcase for an HTML-only app.
-          We've tweaked the design a bit, and also added features that
-          typically require a backend: User Accounts, Exports, Emails.
-        </p>
-      </article>
-
-      <h3>
-        Want to add another example app?
-      </h3>
-      <p>
-         <a href="https://twitter.com/nobackend">Get in touch</a>!
-      </p>
-
-    </div><!-- /.main -->
-
-    <footer>
-      <p>
-        © noBackend.org
-        | Licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">cc-by-sa</a>
-        | <a href="https://github.com/noBackend/presskit">presskit</a>
-        | <a href="https://twitter.com/noBackend">@noBackend</a>
-        | <a href="https://github.com/noBackend/nobackend.org/">Fork us!</a>
-      </p>
-    </footer>
-
-    <script src="assets/vendor/jquery-2.0.0.min.js"></script>
-    <script src="assets/vendor/prism.js"></script>
-    <script src="assets/main.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-40865648-1', 'nobackend.org');
-      ga('send', 'pageview');
-
-    </script>
-  </body>
-</html>
+<div class="box">
+  <h3>
+    Want to add another example app?
+  </h3>
+  <p>
+     <a href="https://twitter.com/nobackend">Get in touch</a>!
+  </p>
+</div>
