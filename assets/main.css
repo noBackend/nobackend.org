@@ -183,6 +183,7 @@ body > footer p {
   border: 1px solid #CDBEB1;
   border-width: 1px 0;
   padding: 1em;
+  margin: 2em 0 0;
 }
 .box h3,
 .box p {
@@ -233,11 +234,24 @@ body.home .main .posts strong + a:hover {
 }
 
 
-body.examples img {
+.screenshot {
+  position: relative;
+  display: inline-block;
   max-width: 50%;
   float: right;
 }
-
+.screenshot img {
+  display: block;
+}
+.screenshot:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.7);
+}
 
 body.dreamcode article {
   border-bottom: 1px solid #CDBEB1;
