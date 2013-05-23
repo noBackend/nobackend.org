@@ -4,7 +4,6 @@ html, body {
   position: relative;
 }
 html {
-  background: #FFF;
   font-family: Ubuntu, sans-serif;
   color: #222;
   line-height: 1.7em;
@@ -27,6 +26,26 @@ img {
 
 p, li {
   max-width: 50em;
+}
+
+hr {
+  border-color: #CDBEB1;
+  border-style: solid none;
+  border-width: 1px 0 0;
+  margin: 18px 0;
+}
+
+pre[class] {
+  margin: 0 0 1em;
+  padding: 0 1em;
+  background: #FFF;
+  position: relative;
+  line-height: 1.3em;
+  padding: 1em 0;
+  font-family: 'Ubuntu Mono', Consolas, Monaco, 'Andale Mono', monospace;
+  display: block;
+  margin: 0 -5.56%;
+  padding: 1em 5.56%;
 }
 
 body > header {
@@ -81,69 +100,39 @@ body > nav ul {
   margin: 0;
   padding: 0;
   position: absolute;
-  bottom: -2px;
+  bottom: -3px;
 }
 body > nav li {
   display: inline-block;
-  padding: .1em 1em 0;
+  padding: 0;
   font-weight: bold;
+  margin: 0;
 }
-body > nav li.active {
+body > nav li a {
+  display: block;
+  color: #73304C;
+  padding: .3em 1em;
+  border: 2px solid transparent;
+  margin: 0;
+}
+body.home > nav li.home a,
+body.dreamcode > nav li.dreamcode a,
+body.examples > nav li.examples a,
+body.solutions > nav li.solutions a,
+body.blog > nav li.blog a {
   background: #F5F2F0;
   padding: .3em 1em;
   border-radius: .5em .5em 0 0;
-  border: 2px solid #CDBEB1;
+  border-color: #CDBEB1;
   border-bottom: 0;
-}
-body > nav li a {
-  color: #73304C;
+  text-decoration: none;
+  color: inherit;
 }
 
 body > .main {
   padding: 2% 5%;
   background: #F5F2F0;
-}
-.welcome .dreamcode {
-  background: #FFF;
-  margin: 0 -5.56%;
-  padding: 1em 5.56%;
-}
-.welcome .dreamcode pre[class] {
-  display: none;
-  padding: 0;
-}
-.welcome .dreamcode pre[class].active {
-  display: block;
-}
-.dreamcode pre[class] {
-  margin: 0 0 1em;
-  padding: 0 1em;
-  background: #FFF;
   position: relative;
-}
-.dreamcode code[class] {
-  line-height: 1.3em;
-  display: inline-block;
-  padding: 1em 0;
-  font-family: 'Ubuntu Mono', Consolas, Monaco, 'Andale Mono', monospace;
-}
-.dreamcode .next a {
-  display: inline-block;
-  /*color: #73304C;*/
-  background: #CDBDB1;
-  border-radius: .5em;
-  text-decoration: none;
-  padding: .1em 1em 0;
-}
-
-.examples img {
-  max-width: 50%;
-  float: right;
-}
-
-.teaser .dreamcode pre {
-  margin: 0 -5.56%;
-  padding: 1em 5.56%;
 }
 
 body > footer {
@@ -154,6 +143,115 @@ body > footer p {
   margin: 0;
 }
 
+.editButton {
+  position: fixed;
+  bottom: 5%;
+  right: -7.2em;
+}
+.editButton {
+  display: block;
+  background: #222;
+  color: #fff;
+  padding: .5em;
+  padding-right: 3em;
+  line-height: 1em;
+  height: 1em;
+  text-decoration: none;
+  border-radius: .5em;
+  font-size: 1em;
+  box-shadow: 0 1px 1px rgba(0,0,0,.5)
+
+  -webkit-transition:right .1s linear;
+   -moz-transition:right .1s linear;
+     -o-transition:right .1s linear;
+        transition:right .1s linear;
+}
+
+.editButton:focus,
+.editButton:hover {
+  text-decoration: none;
+  color: #fff;
+  right: -1em;
+}
+.editButton:before {
+  content: '✎ ';
+  margin-right: .3em;
+}
+
+.box {
+  background: #FFF;
+  border: 1px solid #CDBEB1;
+  border-width: 1px 0;
+  padding: 1em;
+  margin: 2em 0 0;
+}
+.box h3,
+.box p {
+  margin: 0;
+}
+
+/* page customizations */
+body.home .main .dreamcode {
+  background: #FFF;
+  margin: 0 -5.56%;
+  padding: 1em 5.56%;
+}
+body.home .main .dreamcode pre {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+body.home .main .dreamcode pre[class].active {
+  display: block;
+}
+body.home .main .dreamcode .next a {
+  display: inline-block;
+  /*color: #73304C;*/
+  background: #CDBDB1;
+  border-radius: .5em;
+  text-decoration: none;
+  padding: .1em 1em 0;
+}
+
+body.home .main .posts {
+  margin: 2em 0 0;
+}
+body.home .main .posts ul,
+body.home .main .posts li {
+  margin: 0;
+  padding: 0;
+}
+body.home .main .posts strong {
+}
+body.home .main .posts strong + a {
+  font-size: .8em;
+  opacity: .5;
+  text-decoration: none;
+}
+body.home .main .posts strong + a:focus,
+body.home .main .posts strong + a:hover {
+  opacity: 1;
+}
+
+
+.screenshot {
+  position: relative;
+  display: inline-block;
+  max-width: 50%;
+  float: right;
+}
+.screenshot img {
+  display: block;
+}
+.screenshot:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.7);
+}
 
 body.dreamcode article {
   border-bottom: 1px solid #CDBEB1;
@@ -189,6 +287,45 @@ body.examples h3 small {
   opacity: .7;
 }
 
+body.blog .main article {
+  margin: 0 0 1em;
+}
+body.blog .main header > h2 {
+  margin-bottom: 0;
+}
+body.blog .main header > p {
+  margin: 0;
+  opacity: .5;
+}
+body.blog .main h2 a {
+  text-decoration: none;
+}
+body.blog .main h2 a:focus,
+body.blog .main h2 a:hover {
+  text-decoration: underline;
+}
+body.blog .main > article > footer {
+  border: 1px solid #CDBEB1;
+  border-width: 1px 0;
+  padding: .5em;
+  background: #FFF;
+
+  overflow: hidden;
+}
+body.blog .main > article > footer img {
+  float: left;
+  margin-right: .5em;
+}
+body.blog .main > article > footer p {
+  margin: 0;
+  max-width: 100%;
+}
+body.blog .comments {
+  min-height: 400px;
+}
+
+
+
 @media only screen and (max-width: 640px) {
   body > header br {
     display: none;
@@ -206,6 +343,4 @@ body.examples h3 small {
   html {
     font-size: 1em;
   }
-}
-@media only screen and (min-width: 1001px) {
 }
