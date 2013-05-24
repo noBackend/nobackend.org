@@ -147,8 +147,6 @@ body > footer p {
   position: fixed;
   bottom: 5%;
   right: -7.2em;
-}
-.editButton {
   display: block;
   background: #222;
   color: #fff;
