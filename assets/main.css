@@ -19,6 +19,19 @@ a:hover {
   color: #73304C;
   text-decoration: none;
 }
+a.btn {
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  padding: .2em 1em;
+  display: inline-block;
+  border-radius: .5em;
+}
+a.btn:focus,
+a.btn:hover {
+  background: #333;
+  color: #FFF;
+}
 
 img {
   max-width: 100%
