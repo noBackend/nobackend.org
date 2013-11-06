@@ -27,7 +27,7 @@ Last week [Dave Winer blogged](http://scripting.com/2013/11/01/amazonBreaksThrou
 joining the cross-origin backend bandwagon, with the following words:
 
 > It doesn't happen very often when there's a true tech breakthrough, but this is one of those moments.
-  If you care about Internet applications, pay attention to this one, it's important.
+If you care about Internet applications, pay attention to this one, it's important.
 
 
 We also discussed it on the [unhosted web apps](https://groups.google.com/forum/#!topic/unhosted/OOHTVgE6gYA) mailing list.
