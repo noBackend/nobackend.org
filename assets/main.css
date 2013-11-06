@@ -315,6 +315,11 @@ body.blog .main h2 a:focus,
 body.blog .main h2 a:hover {
   text-decoration: underline;
 }
+body.blog .main blockquote {
+  margin-left: 0;
+  padding-left: 1em;
+  border-left: 10px solid #ccc;
+}
 body.blog .main > article > footer {
   border: 1px solid #CDBEB1;
   border-width: 1px 0;
