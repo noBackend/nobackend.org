@@ -19,7 +19,7 @@ An example of this are Dropbox-based apps: you get an API key from Dropbox, and 
 which stores all its data on the user's Dropbox account. Thanks to CORS headers (which the Dropbox API supports), your
 in-browser app can make a cross-origin AJAX request directly to Dropbox, without the need to go through a proxy server.
 
-Since Dropbox, GoogleDrive have also started supporting CORS headers on their API. You can use a client-side library like
+Like Dropbox, GoogleDrive have also started supporting CORS headers on their API. You can use a client-side library like
 [NimbusBase](http://nimbusbase.com/) to make it easier to access both Dropbox and GoogleDrive, without having to write
 any XHR requests yourself.
 
@@ -43,7 +43,7 @@ It makes a lot of sense to separate the app's origin (the frontend domain name,
 where you visit the app) from the backend's origin (the server API domain name), and to let frontend apps develop freely
 without the need for proxy servers.
 
-Dropbox, GoogleDrive, and Amazon already supported (although the real pioneers, even before Dropbox, [were actually
+Dropbox, GoogleDrive, and Amazon already support this (although the real pioneers, even before Dropbox, [were actually
 Flattr](https://groups.google.com/forum/#!searchin/unhosted/flattr/unhosted/RUWhRuCMVvw/4PSHcoRZzBAJ)). At the
 [remoteStorage project](http://remotestorage.io/) we are developing a common REST API for generic storage backends. It's
 called simply "remote storage", and is now an [Internet Draft at the IETF](http://tools.ietf.org/html/draft-dejong-remotestorage-01).
