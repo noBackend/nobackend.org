@@ -300,6 +300,7 @@ body.examples h3 small {
 
 body.blog .main article {
   margin: 0 0 1em;
+  max-width: 50em;
 }
 body.blog .main header > h2 {
   margin-bottom: 0;
