@@ -19,6 +19,7 @@ An example of this are Dropbox-based apps: you get an API key from Dropbox, and 
 which stores all its data on the user's Dropbox account. Thanks to CORS headers (which the Dropbox API supports), your
 in-browser app can make a cross-origin AJAX request directly to Dropbox, without the need to go through a proxy server.
 
+
 Like Dropbox, GoogleDrive have also started supporting CORS headers on their API. You can use a client-side library like
 [NimbusBase](http://nimbusbase.com/) to make it easier to access both Dropbox and GoogleDrive, without having to write
 any XHR requests yourself.
