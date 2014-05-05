@@ -17,4 +17,12 @@ The need for a "custom" backend for most web and mobile apps these days is quite
 
 Now getting hands-on with these technologies is easier than you think. I got started by learning about APIs, especially the Firebase and Parse APIs, using [Codecademy](http://www.codecademy.com/tracks/apis)'s great API track. It will give you a basic overview of using APIs on the front-end with JavaScript and how the various commercial BaaS APIs operate.
 
-Then you can get into comparing what type of noBackend solution you want to start with, more specifically my favorites, Firebase and Hoodie. 
+Then you can get into comparing what type of noBackend solution you want to start with, more specifically my favorites, Firebase and Hoodie. Starting with Firebase, it has a bigger team and a more mature product at the moment. As mentioned before, the slick admin interface and plugins for third-party logins and bindings into popular JavaScript frameworks like Ember, Angular, and React. There is also the ability to host your app with Firebase as well to keep all your code in one place.
+
+Comparing that to Hoodie, developing your noBackend app is absolutely free and solely contingent on the cost of hosting it, which is limited to Nodejitsu or some sort of Linux setup. As an open-source project you have the opportunity to contribute to and extend Hoodie to suit your needs and give back to the project. There is also the "hipster" factor of using an up and coming tool before it's the cool thing to do.
+
+You can get started with Firebase by [signing up](https://www.firebase.com/signup/) and going through their thorough Getting Started docs. Using my app demo, you can follow along with some of the basics of creating a new Firebase application.
+
+Get started with [Hoodie](http://hood.ie/#installation) by installing all its dependencies and the hoodie-cli before instantiating a Hoodie project. The demo todo app provided by Hoodie is great for showing off the ease using the Hoodie API, probably a lot more so than the Hoodie documentation at the moment. My demo app, Troopr, will show off the sign-in/sign-up authentication API a bit more.
+
+You can view the slides from my talk on [Speaker Deck](https://speakerdeck.com/hipsterbrown/figuring-out-front-end-driven-apps) and reach out for any comments or questions on [Twitter](https://twitter.com/hipsterbrown). Happy building!
