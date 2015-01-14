@@ -16,7 +16,7 @@ a new Dreamcode that you'd like to be listed on nobackend.org. Once you created 
 Examples
 --------
 
-The goal is to list apps that are implemented using different noBackend solutions, so developers can get a quick comparision. As nobackend.org is still very young, we only have one example, an invoicing app. We very much invite you to extend the example by adding implementations of the backend using existing noBackend solutions. 
+The goal is to list apps that are implemented using different noBackend solutions, so developers can get a quick comparision. As nobackend.org is still very young, we only have one example, an invoicing app. We very much invite you to extend the example by adding implementations of the backend using existing noBackend solutions.
 
 If you'd like to add another example, please make sure it has at least two different implementations for the backend.
 
@@ -46,5 +46,5 @@ What ever comes to your mind, this is a community endeavor, and you are more tha
 License
 -------
 
-© 2013 Gregor Martynus  
+© 2015 Gregor Martynus
 Licensed under [Attribution-ShareAlike 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
