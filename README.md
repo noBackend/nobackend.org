@@ -46,5 +46,5 @@ What ever comes to your mind, this is a community endeavor, and you are more tha
 License
 -------
 
-© 2015 Gregor Martynus
+© 2016 Gregor Martynus
 Licensed under [Attribution-ShareAlike 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
