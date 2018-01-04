@@ -4,7 +4,7 @@ title:    Build apps like there is noBackend!
 tab:      home
 ---
 
-<h2>It's 2017. Why can't we just …</h2>
+<h2>It's <span id='currentYear'>the 21st century</span>. Why can't we just …</h2>
 
 <div class="dreamcode">
 
@@ -89,6 +89,13 @@ device('192.168.2.2')
   {% endfor %}
   </ul>
 </section>
+
+<!-- If JavaScript is enabled replace the generic "21st century" statement with the current year -->
+<script>
+var today = new Date();
+var year = today.getFullYear();
+document.getElementById("currentYear").innerHTML = year;
+</script>
 
 <!-- disqus: adding comment count -->
 <script type="text/javascript">
